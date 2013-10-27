@@ -10,12 +10,12 @@
 CC=gcc
 CFLAGS=-W -Wall -Wpointer-arith -O3 -lgmp
 
-SOURCE=grsa.c
-HEADER=grsa.h
+SOURCE=source/grsa.c
+HEADER=source/grsa.h
 OBJECT=grsa.o
 LIBRARY=libgrsa.a
-TESTPATH=tests/grsa_test.c
-TESTOUT=tests/test.out
+TEST=test/grsa_test.c
+TESTOUT=test/test.out
 HEADER_DEST=/usr/include/grsa.h
 LIBRARY_DEST=/usr/lib/libgrsa.a
 
@@ -28,14 +28,14 @@ $(LIBRARY): $(OBJECT)
 	ar rcs $(LIBRARY) $(OBJECT)
 
 $(OBJECT): $(SOURCE)
-	$(CC) -o $(OBJECT) -c $(SOURCE)
+	$(CC) $(CFLAGS) -o $(OBJECT) -c $(SOURCE)
 
 clean:
 	rm -f $(OBJECT)
 
 
 
-# Install the build to /usr/bin
+# Install the build to /usr/bin.
 install: $(HEADER_DEST) $(LIBRARY_DEST)
 
 $(HEADER_DEST): $(HEADER)
