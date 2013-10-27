@@ -14,8 +14,8 @@ SOURCE=source/grsa.c
 HEADER=source/grsa.h
 OBJECT=grsa.o
 LIBRARY=libgrsa.a
-TEST=test/grsa_test.c
-TESTOUT=test/test.out
+TESTPATH=tests/grsa_test.c
+TESTOUT=tests/test.out
 HEADER_DEST=/usr/include/grsa.h
 LIBRARY_DEST=/usr/lib/libgrsa.a
 
