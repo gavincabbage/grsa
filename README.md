@@ -18,8 +18,8 @@ for any critical applications. See the included MIT license for a formal disclai
 ### System Requirements
 
 The GRSA library depends on the GMP library to do its number crunching. For GRSA code to compile and run, it must be properly
-linked to the GMP installation on the local machine. The library has been developed and tested on 32 and 64 bit systems 
-running Linux 3.5.x with Ubuntu and openSUSE distributions. 
+linked to the GRSA and GMP installations on the local machine. The library has been developed and tested on 32 and 64 bit Intel systems 
+running the latest Linux kernel. The library is compiled and installed using `make`, `gcc` and `ar`.
 
 ---
 
