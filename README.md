@@ -10,7 +10,8 @@ The GRSA library is intended to provide a convenient and flexible collection of 
 public key cryptosystem based on the RSA algorithm. Built as an abstraction on the GNU Multiple Precision (GMP) library, the
 data structures and functions included are designed to easily integrate secure encryption in a variety of applications.
 
-#### Please note that this library exists for learning purposes only and it's security is not verified!
+*Please note that this library exists for learning purposes only and it's security is not verified. Do not use this library
+for any critical applications. See the included MIT license for a formal disclaimer.*
 
 ---
 
