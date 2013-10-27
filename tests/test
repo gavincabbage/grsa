@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# usage: $ test <test file>
+echo "================ COMPILING ================"
+flags="-Wall -Wpointer-arith -O3 -W"
+library="../grsa.c"
+gcc $flags -c -o grsa.o $library
+gcc $flags -o grsa_test $1 grsa.o -lgmp
+echo "================ RUNNING TEST ================"
+./grsa_test
+rm grsa_test 2>/dev/null
+rm grsa.o 2>/dev/null
+echo "================ TEST COMPLETE ================"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exit 0
+
+
+valgrind --tool=memcheck -v --show-reachable=yes --leak-check=full ./grsa_test
+
+
+
+# some other shit im going to leave here for now
+NUMTESTS=$1
+TESTPROG=$2
+
+successes=0
+failures=0
+for test in 0 .. NUMTESTS
+do
+	echo `TESTPROG` | tail -1
+	result="echo `TESTPROG` | tail -1"
+	if [ $result -eq 0 ]
+	then
+		successes=$((successes+1))
+	else
+		failures=$((failures+1))
+	fi
+done
+
+echo "Completed $NUMTESTS tests. $successes successes, $failures failures."
