@@ -1,23 +1,21 @@
- ##############################################################################
- #                                                                            #
- #               grsa - RSA Cryptography Library (makefile)                   #
- #               Gavin Cabbage - gavincabbage@gmail.com                       #
- #                                                                            #
- ##############################################################################
+##
+# grsa - RSA Cryptography Library (makefile)
+# Gavin Cabbage - gavincabbage@gmail.com
+#
+##
 
 
 
 CC=gcc
 CFLAGS=-W -Wall -Wpointer-arith -O3 -lgmp
-
 SOURCE=source/grsa.c
-HEADER=source/grsa.h
 OBJECT=grsa.o
+HEADER=source/grsa.h
 LIBRARY=libgrsa.a
-TESTPATH=tests/grsa_test.c
-TESTOUT=tests/test.out
 HEADER_DEST=/usr/include/grsa.h
 LIBRARY_DEST=/usr/lib/libgrsa.a
+TESTPATH=tests/grsa_test.c
+TESTOUT=tests/test.out
 
 
 

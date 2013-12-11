@@ -1,9 +1,8 @@
-/******************************************************************************
- *                                                                            *
- *               grsa - RSA Cryptography Library (self test)                  *
- *               Gavin Cabbage - gavincabbage@gmail.com                       *
- *                                                                            *
- ******************************************************************************/
+/**
+ * grsa - RSA Cryptography Library (self test)
+ * Gavin Cabbage - gavincabbage@gmail.com
+ *
+ **/
 
 
 
@@ -21,7 +20,7 @@ void dummy_data(uchar **buffer, int bytes);
 
 
 
-int main () 
+int main () /******************************************************************/
 {
   
   /* Prepare for testing.
@@ -156,7 +155,7 @@ int main ()
 
   return 0;
 
-} /* end main */
+} /** end main ****************************************************************/
 
 
 
