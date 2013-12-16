@@ -6,7 +6,7 @@
 
 
 
-#include "../source/grsa.h"
+#include <grsa.h>
 
 
 
