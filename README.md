@@ -8,7 +8,7 @@
 
 #### Complete RSA functionality built on the GNU Multiple Precision (GMP) library.
 
-The GRSA library is intended to provide a convenient and flexible collection of the core functions necessary to implement an
+The GRSA library is intended to provide a convenient and flexible collection of the core functions necessary to implement a
 public key cryptosystem based on the RSA algorithm. Built as an abstraction on the GNU Multiple Precision (GMP) library, the
 data structures and functions included are designed to easily integrate secure encryption in a variety of applications.
 
