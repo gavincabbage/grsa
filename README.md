@@ -44,6 +44,6 @@ order. The source files `grsa.h` and `grsa.c` can also be compiled manually and 
 
 ---
 
-Copyright (c) 2013 Gavin Cabbage. 
+Gavin Cabbage, 2013. 
 
 Please see the included MIT License for more details.
